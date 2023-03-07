@@ -1,0 +1,10 @@
+.home {
+    background: no-repeat url("../assets/college.jpg");
+    width: 10%;
+    width: 10%;
+    height: max-content;
+}
+
+.stud{
+    background: no-repeat url("../assets/student.png");
+}
