@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.home{
-  background-image: url('./assets/college.jpg');
-}
