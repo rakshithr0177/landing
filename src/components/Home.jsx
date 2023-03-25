@@ -6,7 +6,7 @@ import frog from "../assets/frog.json";
 import thinking from "../assets/thinking.json";
 import connect from "../assets/connect.json";
 import sun from "../assets/sun.jpg";
-import moon from "../assets/moon.jpg";
+import moon from "../assets/night.jpg";
 
 import { Parallax } from "react-parallax";
 
@@ -36,11 +36,10 @@ function Home() {
                     <h4 className='text-2xl text-slate-50 space-x-2'>Scroll</h4>
 
                 </div>
-                
+
                 <Parallax
-                    strength={600}
+                    strength={-600}
                     bgImage={moon}
-                    blur={{min:-1,max:0}}
                 >
                     <div className="wrapper1">
                         {/* first container */}
@@ -135,7 +134,7 @@ function Home() {
 
                         {/* sixth container */}
                         <div className='sixth h-[80%] p-[1rem] w-[80%] flex items-center justify-center'>
-                            <div className='flex flex-col justify-end w-full text-start'>
+                            <div className='flex flex-col justify-end w-[50%] text-start '>
                                 <h4 className='text-2xl  w-[100%] pt-4' data-aos='fade-left'>
                                     Job-bie is all in one job portal which connects employer and employee
                                 </h4>
@@ -150,7 +149,7 @@ function Home() {
                                     One stop destination for all career needs
                                 </h4>
                             </div>
-                            <div className="connect w-64 m-12" >
+                            <div className="connect w-40 m-12" >
                                 <Lottie
                                     animationData={connect}
                                     loop={true}
